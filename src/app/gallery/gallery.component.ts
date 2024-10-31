@@ -11,5 +11,5 @@ import { CommonModule } from '@angular/common';
 
 
 export class GalleryComponent {
-
+  imagePaths = [1, 2, 3, 4, 5, 6].map(num => `assets/images/${num}.jpg`);
 }
