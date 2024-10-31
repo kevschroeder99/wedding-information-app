@@ -1,1 +1,21 @@
 /* You can add global styles to this file, and also import other style files */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Make the root container a full-height flexbox */
+html, body {
+    height: 100%;
+    margin: 0;
+  }
+  
+  #app-root {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  
+  /* The main content area takes all available space */
+  main {
+    flex: 1;
+  }
