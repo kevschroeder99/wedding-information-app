@@ -1,0 +1,16 @@
+.app-footer {
+    background-color: rgb(224 242 254);
+    color: #0e0d0d;
+    padding: 1rem;
+    text-align: right;
+  }
+  
+  .app-footer a {
+    color: #050505;
+    text-decoration: none;
+    margin: 0 0.5rem;
+  }
+  
+  .app-footer a:hover {
+    color: #fff;
+  }
