@@ -6,44 +6,30 @@
           <div class="flex-shrink-0 flex items-center">
             <span class="text-3xl font-bold text-black-700">Wedding</span>
           </div>
-          
+
           <!-- Burger menu button for mobile -->
           <div class="sm:hidden">
-            <button 
-              (click)="isMenuOpen = !isMenuOpen" 
-              type="button" 
+            <button (click)="isMenuOpen = !isMenuOpen" type="button"
               class="inline-flex items-center justify-center p-2 rounded-md text-gray-600 hover:text-gray-900 hover:bg-sky-200 focus:outline-none"
-              aria-controls="mobile-menu" 
-              [attr.aria-expanded]="isMenuOpen">
+              aria-controls="mobile-menu" [attr.aria-expanded]="isMenuOpen">
               <span class="sr-only">Open main menu</span>
               <!-- Icon when menu is closed -->
-              <svg 
-                *ngIf="!isMenuOpen"
-                class="block h-6 w-6" 
-                xmlns="http://www.w3.org/2000/svg" 
-                fill="none" 
-                viewBox="0 0 24 24" 
-                stroke="currentColor" 
-                aria-hidden="true">
+              <svg *ngIf="!isMenuOpen" class="block h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none"
+                viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
               </svg>
               <!-- Icon when menu is open -->
-              <svg 
-                *ngIf="isMenuOpen"
-                class="block h-6 w-6" 
-                xmlns="http://www.w3.org/2000/svg" 
-                fill="none" 
-                viewBox="0 0 24 24" 
-                stroke="currentColor" 
-                aria-hidden="true">
+              <svg *ngIf="isMenuOpen" class="block h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none"
+                viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
               </svg>
             </button>
           </div>
-  
+
           <!-- Desktop menu -->
           <div class="hidden sm:flex sm:items-center sm:justify-center sm:space-x-8">
-            <a routerLink="/" routerLinkActive="text-gray-900 border-b-2 border-green-700"
+            <a routerLink="/" [routerLinkActive]="'text-gray-900 border-b-2 border-green-700'"
+              [routerLinkActiveOptions]="{ exact: true }"
               class="text-gray-600 hover:text-gray-900 px-3 py-2 text-sm font-medium">
               Home
             </a>
@@ -69,15 +55,13 @@
             </a>
           </div>
         </div>
-  
+
         <!-- Mobile menu -->
-        <div 
-          class="sm:hidden" 
-          id="mobile-menu" 
-          [class.hidden]="!isMenuOpen">
+        <div class="sm:hidden" id="mobile-menu" [class.hidden]="!isMenuOpen">
           <div class="pt-2 pb-3 space-y-1">
-            <a routerLink="/" routerLinkActive="bg-sky-200 text-gray-900"
-              class="text-gray-600 hover:bg-sky-200 hover:text-gray-900 block px-3 py-2 rounded-md text-base font-medium">
+            <a routerLink="/" [routerLinkActive]="'text-gray-900 border-b-2 border-green-700'"
+              [routerLinkActiveOptions]="{ exact: true }"
+              class="text-gray-600 hover:text-gray-900 px-3 py-2 text-sm font-medium">
               Home
             </a>
             <a routerLink="/schedule" routerLinkActive="bg-sky-200 text-gray-900"
@@ -104,11 +88,10 @@
         </div>
       </div>
     </nav>
-  
+
     <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
       <router-outlet></router-outlet>
     </main>
   </div>
   <app-footer></app-footer>
-  <app-rsvp-form></app-rsvp-form>
-  </div>
+</div>

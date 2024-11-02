@@ -10,5 +10,8 @@ import { Component } from '@angular/core';
   styleUrl: './home.component.css'
 })
 export class HomeComponent {
-  
+  weddingImages = [
+    { src: 'assets/images/herzbild.jpg', caption: 'Moment 1' },
+    { src: 'assets/images/torte.jpg', caption: 'Moment 2' }
+  ];
 }
