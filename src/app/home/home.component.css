@@ -1,91 +1,77 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Helvetica', sans-serif;
-  }
+/* Header Section */
+.app-header {
+  background-color: rgb(224 242 254);
+  padding: 0px;
+  text-align: center;
+  border-bottom: 2px solid rgb(224 242 254);
+}
 
-  .hero {
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('/api/placeholder/1920/1080') center/cover;
-    color: white;
-    text-align: center;
-  }
+.app-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin: 0;
+}
 
-  .hero-content h1 {
-    font-size: 4rem;
-    margin-bottom: 1rem;
-  }
+.app-date {
+  font-size: 1.5rem;
+  color: #606260;
+  margin-top: 10px;
+}
 
-  .hero-content p {
-    font-size: 1.5rem;
-    margin-bottom: 2rem;
-  }
+/* Main Content Section */
+.app-content {
+  padding: 20px;
+  max-width: 800px;
+  margin: auto;
+  font-family: 'Arial', sans-serif;
+}
 
-  .date-badge {
-    background: rgba(255,255,255,0.9);
-    color: #333;
-    padding: 1rem 2rem;
-    border-radius: 4px;
-    display: inline-block;
-  }
+.description {
+  margin-bottom: 30px;
+  font-size: 1.125rem;
+  line-height: 1.6;
+  color: #495057;
+}
 
-  .section {
-    padding: 5rem 2rem;
-    text-align: center;
-  }
+/* Gallery Section */
+.gallery-section {
+  margin-top: 30px;
+}
 
-  .section h2 {
-    font-size: 2.5rem;
-    margin-bottom: 2rem;
-    color: #333;
-  }
+.gallery-title {
+  font-size: 1.75rem;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 20px;
+}
 
-  .section p {
-    max-width: 800px;
-    margin: 0 auto;
-    line-height: 1.6;
-    color: #666;
-  }
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 15px;
+}
 
-  .gallery {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 2rem;
-    padding: 2rem;
-    background: #f9f9f9;
-  }
+.gallery-item {
+  position: relative;
+  cursor: pointer;
+}
 
-  .gallery img {
-    width: 100%;
-    height: 300px;
-    object-fit: cover;
-    border-radius: 8px;
-    transition: transform 0.3s ease;
-  }
+.gallery-img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+}
 
-  .gallery img:hover {
-    transform: scale(1.05);
-  }
+.gallery-img:hover {
+  transform: scale(1.05);
+}
 
-  .rsvp {
-    background: #f0f0f0;
-  }
-
-  .button {
-    display: inline-block;
-    padding: 1rem 2rem;
-    background: #333;
-    color: white;
-    text-decoration: none;
-    border-radius: 4px;
-    margin-top: 2rem;
-    transition: background 0.3s ease;
-  }
-
-  .button:hover {
-    background: #555;
-  }
+.custom-divider {
+  height: 2px;
+  background-color: #0a5104;
+  margin: 20px 0;
+  width: 90%; /* Adjust width as needed */
+  margin-left: auto;
+  margin-right: auto;
+}

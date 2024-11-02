@@ -15,7 +15,7 @@ import { CommonModule } from '@angular/common';
   standalone: true,
   imports: [RouterOutlet, RouterModule, GalleryComponent, HomeComponent, LocationComponent, ScheduleComponent, 
     FooterComponent, HomeComponent, 
-    RsvpFormComponent, CommonModule],
+    RsvpFormComponent, CommonModule, HotelsComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })

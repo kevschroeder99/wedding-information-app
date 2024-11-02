@@ -1,16 +1,20 @@
 .app-footer {
-    background-color: rgb(224 242 254);
-    color: #0e0d0d;
-    padding: 1rem;
-    text-align: right;
-  }
-  
-  .app-footer a {
-    color: #050505;
-    text-decoration: none;
-    margin: 0 0.5rem;
-  }
-  
-  .app-footer a:hover {
-    color: #fff;
-  }
+  background-color: rgb(224 242 254);
+  color: #0e0d0d;
+  padding: 0.5rem;  /* Reduced from 1rem */
+  text-align: right;
+  font-size: 0.875rem;  /* Added smaller font size */
+  line-height: 1;  /* Added to reduce vertical space */
+}
+
+.app-footer a {
+  color: #050505;
+  text-decoration: none;
+  margin: 0 0.25rem;  /* Reduced from 0.5rem */
+  padding: 0.25rem;  /* Added small padding for clickable area */
+}
+
+.app-footer a:hover {
+  color: #666;  /* Changed to a darker hover color since background is light */
+  transition: color 0.2s ease;  /* Smooth transition for hover */
+}

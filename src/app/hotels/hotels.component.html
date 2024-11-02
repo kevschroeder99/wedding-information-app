@@ -1,19 +1,17 @@
 <div class="max-w-2xl mx-auto">
     <h2 class="text-3xl font-bold mb-8 text-center">Hotels Nearby</h2>
-        <div *ngFor="let hotel of hotels" class="bg-white shadow rounded-lg p-6 mb-6 cursor-pointer flex items-start"
-        (click)="openModal(hotel)">
+        <div *ngFor="let hotel of hotels" class="bg-white shadow rounded-lg p-6 mb-6 cursor-pointer flex items-start">
         <!-- Left Section (Hotel Information) -->
         <div class="flex-1">
             <h3 class="text-xl font-semibold">{{ hotel.name }}</h3>
-            <p class="text-gray-700 mb-2">{{ hotel.address }}</p>
+            <p class="text-gray-700 mb-4">{{ hotel.address }}</p>
             <p class="text-gray-600 mb-4">{{ hotel.description }}</p>
+            <p class="text-gray-600 mb-4">{{ hotel.price }}</p>
+            <p class="text-gray-600 mb-4">{{ hotel.booking }}</p>
             <a [href]="hotel.website" target="_blank" class="text-blue-500 hover:underline">Visit Website</a>
         </div>
 
         <!-- Right Section (Image) -->
-        <img src="assets/scheune.jpeg" alt="Hotel Image" class="w-48 h-48 object-cover rounded-lg ml-4">
-    </div>
-
-    <!-- Modal Popup for Selected Hotel -->
-    <app-hotel-modal *ngIf="selectedHotel" [hotel]="selectedHotel" (close)="closeModal()"></app-hotel-modal>
+        <img [src]="hotel.picture" alt="Camping Image" class="w-48 h-48 object-cover rounded-lg ml-4">
+    </div>  
 </div>
