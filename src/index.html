@@ -1,13 +1,18 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <link rel="icon" type="image/png" href="assets/favicon.png">
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1"> <!-- Keep this line -->
+  <link rel="icon" type="image/png" href="assets/favicon.png">
   <title>Hochzeit</title>
   <base href="/">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body class="bg-gray-50">
   <app-root></app-root>
 </body>
+<form name="rsvp" netlify netlify-honeypot="bot-field" hidden>
+  <input type="text" name="name">
+  <input type="number" name="additional-guests">
+  <input type="radio" name="meal-preference">
+</form>
 </html>

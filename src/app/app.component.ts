@@ -6,12 +6,15 @@ import { LocationComponent } from './location/location.component';
 import { ScheduleComponent } from './schedule/schedule.component';
 import { FooterComponent } from './footer/footer.component';
 import { HotelsComponent } from './hotels/hotels.component';
+import { RsvpFormComponent } from './rsvp-form/rsvp-form.component';
 
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, RouterModule, GalleryComponent, HomeComponent, LocationComponent, ScheduleComponent, FooterComponent, HomeComponent],
+  imports: [RouterOutlet, RouterModule, GalleryComponent, HomeComponent, LocationComponent, ScheduleComponent, 
+    FooterComponent, HomeComponent, 
+    RsvpFormComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
