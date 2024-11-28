@@ -1,3 +1,4 @@
+
 import { Component } from '@angular/core';
 import { RouterModule, RouterOutlet } from '@angular/router';
 import { GalleryComponent } from './gallery/gallery.component';
@@ -7,15 +8,25 @@ import { ScheduleComponent } from './schedule/schedule.component';
 import { FooterComponent } from './footer/footer.component';
 import { HotelsComponent } from './hotels/hotels.component';
 import { RsvpFormComponent } from './rsvp-form/rsvp-form.component';
-import { CommonModule } from '@angular/common'; 
-
+import { CommonModule } from '@angular/common';
+import { FaqComponent } from './faq/faq.component';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, RouterModule, GalleryComponent, HomeComponent, LocationComponent, ScheduleComponent, 
-    FooterComponent, HomeComponent, 
-    RsvpFormComponent, CommonModule, HotelsComponent],
+  imports: [
+    CommonModule,
+    RouterOutlet, 
+    RouterModule, 
+    GalleryComponent, 
+    LocationComponent, 
+    ScheduleComponent, 
+    FooterComponent, 
+    HomeComponent, 
+    RsvpFormComponent, 
+    HotelsComponent,
+    FaqComponent
+  ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })

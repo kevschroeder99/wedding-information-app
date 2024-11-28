@@ -1,25 +1,66 @@
 <!-- Header Section -->
 <header class="app-header">
-  <h1 class="app-title">Hochzeit</h1>
-  <h1 class="app-title">Sinje & Kevin</h1>
-  <h2 class="app-date">23. August 2025</h2>
-  <div class="custom-divider"></div>
+  <div class="grid-container-header">
+    <div class="photo-gallery-header-left">
+      <img src="assets/images/teller-oval.png" alt="Hochzeitstorte" class="header-photo" />
+    </div>
+    <div class="header-content">
+      <h1 class="app-title">Hochzeit</h1>
+      <h1 class="app-title">Sinje & Kevin</h1>
+      <h2 class="app-date">23. August 2025</h2>
+    </div>
+    <div class="photo-gallery-header-right">
+      <img src="assets/images/teller-rund.png" alt="Teller" class="header-photo" />
+    </div>
+  </div>
 </header>
+<div class="divider"></div>
 
 <!-- Main Content Section -->
 <main class="app-content">
-  <section class="description">
-    <p class="app-description">
-      Weitere Infos folgen hier demnächst... tbc...
-    </p>
-  </section>
+  <div class="grid-container">
+    <div class="photo-gallery-left">
+      <img src="assets/images/landing-page-1.JPG" alt="Bild1" />
+      <img src="assets/images/landing-page-3.JPEG" alt="Bild3" />
+    </div>
+    <div class="description-section">
+      <section class="description">
+        <p class="app-description">
+          Liebe Familie, liebe Freunde, <br>
+          <br>
+          <br>
+          mit großer Freude möchten wir Euch mitteilen: Wir heiraten! <br>
+          <br>
+          Am Samstag, den <b>23. August 2025</b>, möchten wir diesen besonderen Tag gemeinsam mit Euch feiern. <br>
+          <br>
+          Haltet Euch diesen Tag frei, weitere Details zur Feier folgen in Kürze. Eure Anwesenheit würde diesen Tag noch unvergesslicher machen! <br>
+          <br>
+          Wir freuen uns darauf, diesen besonderen Moment mit euch zu teilen. <br>
+          <br>
+          Damit wir mit der weiteren Planung starten können, meldet Euch bitte bis <b>Ende des Jahres</b> über das Anmeldeformular an :-)
+          <br>
+          <br>
+          GaLiGrü<br>
+          Sinje & Kevin
+        </p>
+        <br>
+        <!-- Button Section -->
+        <div class="button-section">
+          <a routerLink="/rsvp-form" class="btn btn-primary">
+          Zum Anmeldeformular
+          </a>
+          </div>
+      </section>
+    </div>
+    
+    <div class="photo-gallery-right">
+      <img src="assets/images/landing-page-2.JPG" alt="Bild2" />
+      <img src="assets/images/torte.png" alt="Hochzeitstorte" />
+    </div>
+  </div>
 
-  <!-- Image Gallery Section -->
-  <!--<img src="assets/images/herzbild.png"/>-->
+  <div class="divider"></div>
+  <br>
 
-  <img src="assets/images/torte.png"/>
-  <img src="assets/images/teller-rund.png"/>
-  <img src="assets/images/teller-oval.png"/>
-
-
+  <app-faq></app-faq>
 </main>

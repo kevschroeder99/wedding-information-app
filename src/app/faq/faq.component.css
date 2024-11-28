@@ -1,0 +1,69 @@
+.wedding-faq-section {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem;
+    background-color: rgb(191, 224, 246);
+    border-radius: 10px;
+  }
+
+  .faq-title {
+    text-align: center;
+    color: black;
+    margin-bottom: 2rem;
+    font-size: 2rem;
+  }
+
+  .faq-accordion {
+    border: 1px solid whitesmoke;
+    border-radius: 8px;
+  }
+
+  .faq-category {
+    border-bottom: 1px solid whitesmoke;
+  }
+
+  .faq-category:last-child {
+    border-bottom: none;
+  }
+
+  .category-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background-color: #faf3f3;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+  }
+
+  .category-header:hover {
+    background-color: #ffa29c;
+  }
+
+  .category-header.active {
+    background-color: #ffa29c;
+  }
+
+  .toggle-icon {
+    font-size: 1.2rem;
+  }
+
+  .category-content {
+    padding: 1rem;
+    background-color: whitesmoke;
+  }
+
+  .faq-item {
+    margin-bottom: 1rem;
+  }
+
+  .faq-question {
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    color: #333;
+  }
+
+  .faq-answer {
+    color: #666;
+  }
