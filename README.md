@@ -1,8 +1,9 @@
 # Wedding Information App
 
-Welcome to our wedding information app! This app provides all the essential details about our wedding, including event schedules, venue information, RSVP, and more. We hope this app will help our guests stay informed and make the event as smooth and enjoyable as possible.
+Welcome to our wedding information app! This app provides all the essential details about our wedding, including event schedules, venue information, RSVP, and more. We hope this app will help our guests stay informed and make the event as smooth and enjoyable as possible. 
 
 Notice: That is my first WebApp and i tried to learn a bit Angular Projects, HTML, CSS, etc. 🙂
+
 ---
 
 ## Features
