@@ -11,7 +11,7 @@ import { CommonModule } from '@angular/common';
 export class HotelsComponent {
   hotels = [
     {
-      name: '🏨 HotelHotel Zum Zollhaus',
+      name: '🏨 Hotel Zum Zollhaus',
       address: 'Kleibroker Str. 139, 26180 Rastede',
       description: 'ca. 700m entfernt von der Location',
       price: '125-135€ pro Nacht (inkl. Frühstück)',
