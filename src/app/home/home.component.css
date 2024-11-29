@@ -4,21 +4,18 @@
   padding: 0px;
   text-align: center;
   border-bottom: 1px solid rgb(224 242 254);
-  font-family: 'Lucida Console', Monospace;
 }
 
 .app-title {
   font-size: 2.5rem;
   font-weight: bold;
   margin: 0;
-  font-family: 'Lucida Console', Monospace;
 }
 
 .app-date {
   font-size: 1.5rem;
   color: rgb(4, 9, 67);
   margin-top: 5px;
-  font-family: 'Lucida Console', Monospace;
 }
 
 /* Main Content Section */
@@ -26,7 +23,6 @@
   padding: 1px;
   max-width: 1500px;
   margin: auto;
-  font-family: 'Lucida Console', Monospace;
 }
 
 .app-description {
@@ -34,7 +30,6 @@
   max-width: 800px;
   margin: auto;
   color: rgb(4, 9, 67);
-  font-family: 'Lucida Console', Monospace;
 }
 
 .description {
