@@ -1,0 +1,27 @@
+<section class="wedding-faq-section">
+    <h2 class="faq-title">FAQ</h2>
+    <div class="faq-accordion">
+      <div *ngFor="let category of faqCategories; let i = index" class="faq-category">
+        <div 
+          class="category-header" 
+          (click)="toggleCategory(i)"
+          [class.active]="openCategories[i]"
+        >
+          {{ category.category }}
+          <span class="toggle-icon">{{ openCategories[i] ? '−' : '+' }}</span>
+        </div>
+        <div 
+          class="category-content" 
+          *ngIf="openCategories[i]"
+        >
+          <div 
+            *ngFor="let item of category.questions" 
+            class="faq-item"
+          >
+            <div class="faq-question">{{ item.question }}</div>
+            <div class="faq-answer">{{ item.answer }}</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>

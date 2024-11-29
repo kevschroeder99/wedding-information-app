@@ -6,6 +6,7 @@ import { GalleryComponent } from './gallery/gallery.component';
 import { HotelsComponent } from './hotels/hotels.component';
 import { RsvpFormComponent } from './rsvp-form/rsvp-form.component';
 
+
 export const routes: Routes = [
     { path: '', component: HomeComponent },
     { path: 'schedule', component: ScheduleComponent },

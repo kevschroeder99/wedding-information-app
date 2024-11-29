@@ -3,34 +3,45 @@
   background-color: rgb(224 242 254);
   padding: 0px;
   text-align: center;
-  border-bottom: 2px solid rgb(224 242 254);
+  border-bottom: 1px solid rgb(224 242 254);
+  font-family: 'Lucida Console', Monospace;
 }
 
 .app-title {
   font-size: 2.5rem;
   font-weight: bold;
   margin: 0;
+  font-family: 'Lucida Console', Monospace;
 }
 
 .app-date {
   font-size: 1.5rem;
-  color: #606260;
-  margin-top: 10px;
+  color: rgb(4, 9, 67);
+  margin-top: 5px;
+  font-family: 'Lucida Console', Monospace;
 }
 
 /* Main Content Section */
 .app-content {
-  padding: 20px;
+  padding: 1px;
+  max-width: 1500px;
+  margin: auto;
+  font-family: 'Lucida Console', Monospace;
+}
+
+.app-description {
+  padding: 10px;
   max-width: 800px;
   margin: auto;
-  font-family: 'Arial', sans-serif;
+  color: rgb(4, 9, 67);
+  font-family: 'Lucida Console', Monospace;
 }
 
 .description {
   margin-bottom: 30px;
   font-size: 1.125rem;
   line-height: 1.6;
-  color: #495057;
+  color: #1e66af;
 }
 
 /* Gallery Section */
@@ -68,10 +79,99 @@
 }
 
 .custom-divider {
-  height: 2px;
-  background-color: #0a5104;
-  margin: 20px 0;
-  width: 90%; /* Adjust width as needed */
+  height: 1px;
+  background-color: black;
+  margin: 10px 0;
+  width: 65%; /* Adjust width as needed */
   margin-left: auto;
   margin-right: auto;
+}
+
+.divider {
+  height: 1px;
+  background-color: black;
+  margin: 30px 0;
+  width: 100%; /* Adjust width as needed */
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  grid-gap: 2rem;
+}
+
+.photo-gallery-left,
+.photo-gallery-right {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 1rem;
+}
+
+.photo-gallery-left img,
+.photo-gallery-right img {
+  width: 80%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.description-section {
+  grid-column: 2 / 3;
+}
+
+.grid-container-header {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  grid-gap: 2rem;
+}
+
+.photo-gallery-header-left,
+.photo-gallery-header-right {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 3rem;
+}
+
+.photo-gallery-header-left img {
+  width: 60%;
+  height: auto;
+  border-radius: 2px;
+}
+
+.photo-gallery-header-right img {
+  width: 50%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.description-header-section {
+  grid-column: 2 / 3;
+}
+
+/* Button Section */
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  color: white;
+  background-color: #4caf50; /* Grün */
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.btn:hover {
+  background-color: #45a049; /* Dunkleres Grün */
+  transform: scale(1.05); /* Leichtes Vergrößern beim Hover */
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+}
+
+.button-section {
+  margin-top: 20px;
+  text-align: center; /* Zentriert den Button */
 }

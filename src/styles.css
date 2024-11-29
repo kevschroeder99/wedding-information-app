@@ -1,12 +1,15 @@
+@import '@angular/material/prebuilt-themes/indigo-pink.css';
 /* You can add global styles to this file, and also import other style files */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
+
 /* Make the root container a full-height flexbox */
 html, body {
     height: 100%;
     margin: 0;
+    font-family: 'Lucida Console', Monospace;
   }
   
   #app-root {

@@ -5,6 +5,7 @@
   text-align: right;
   font-size: 0.875rem;  /* Added smaller font size */
   line-height: 1;  /* Added to reduce vertical space */
+  font-family: 'Lucida Console', Monospace;
 }
 
 .app-footer a {
