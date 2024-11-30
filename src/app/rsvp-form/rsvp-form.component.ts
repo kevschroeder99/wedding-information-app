@@ -48,20 +48,10 @@ export class RsvpFormComponent {
   }
 
   onSubmit(event: Event) {
-    event.preventDefault(); // Prevent default form submission
-  
-    if (this.rsvpForm.valid) {
-      const formData = new FormData();
-      Object.keys(this.rsvpForm.value).forEach(key => {
-        formData.append(key, this.rsvpForm.value[key]);
-      });
-  
-      fetch("/", {
-        method: "POST",
-        body: formData,
-      })
-      .then(() => console.log("Form successfully submitted"))
-      .catch((error) => alert(error));
+    onSubmit(event: Event) {
+    // The form will be handled by Netlify automatically
+    // You can add additional client-side logic here if needed
+    console.log('Form submitted');
     }
   }
 }
