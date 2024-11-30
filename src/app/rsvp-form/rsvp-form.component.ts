@@ -48,7 +48,7 @@ export class RsvpFormComponent {
 
   // Update the method signature to accept the event
   onSubmit(event: Event) {
-    event.preventDefault(); // Prevent default form submission
+    //event.preventDefault(); // Prevent default form submission
     
     if (this.rsvpForm.valid) {
       console.log('Form submitted', this.rsvpForm.value);
