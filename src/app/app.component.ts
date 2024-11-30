@@ -11,6 +11,7 @@ import { RsvpFormComponent } from './rsvp-form/rsvp-form.component';
 import { CommonModule } from '@angular/common';
 import { FaqComponent } from './faq/faq.component';
 
+
 @Component({
   selector: 'app-root',
   standalone: true,

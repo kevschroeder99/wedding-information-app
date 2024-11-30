@@ -1,5 +1,7 @@
 <!-- rsvp-form.component.html -->
 <form 
+  [formGroup]="rsvpForm"
+  (ngSubmit)="onSubmit($event)"
   name="rsvp"
   method="POST"
   data-netlify="true"
@@ -13,24 +15,41 @@
     <label>Don't fill this out if you're human: <input name="bot-field"></label>
   </p>
 
+  
   <!-- Name field -->
   <div class="mb-4">
     <label for="name" class="block text-gray-700 mb-2">Vollständiger Name *</label>
     <input
       type="text"
       id="name"
-      name="name"
-      required
+      formControlName="name"
       class="w-full px-3 py-2 border rounded focus:outline-none focus:border-blue-500">
   </div>
+
+  <!-- RSVP Dropdown -->
+  <div class="mb-4">
+    <label for="rsvp-status" class="block text-gray-700 mb-2">Wirst Du teilnehmen? *</label>
+    <select 
+      id="rsvp-status"
+      formControlName="rsvpStatus"
+      (change)="onRsvpStatusChange()"
+      class="w-full px-3 py-2 border rounded focus:outline-none focus:border-blue-500"
+      required>
+      <option value="">Bitte wählen</option>
+      <option value="accept">Ja, ich komme</option>
+      <option value="not-accept">Nein, ich kann leider nicht</option>
+    </select>
+  </div>
+
 
   <!-- Additional guests field -->
   <div class="mb-4">
     <label for="additional-guests" class="block text-gray-700 mb-2">Kommst Du in Begleitung?</label>
     <select
       id="additional-guests"
-      name="additional-guests"
-      class="w-full px-3 py-2 border rounded focus:outline-none focus:border-blue-500">
+      formControlName="additionalGuests"
+      class="w-full px-3 py-2 border rounded focus:outline-none focus:border-blue-500"
+      [disabled]="isFormDisabled()">
       <option value="0">Nein</option>
       <option value="1">Ja, + 1</option>
       <option value="2">Ja, + 1 und Kindern</option>
@@ -45,9 +64,9 @@
         <input
           type="radio"
           id="vegetarian"
-          name="meal-preference"
+          formControlName="mealPreference"
           value="vegetarian"
-          required
+          [disabled]="isFormDisabled()"
           class="mr-2">
         <label for="vegetarian">Vegetarisch</label>
       </div>
@@ -55,9 +74,9 @@
         <input
           type="radio"
           id="meat"
-          name="meal-preference"
+          formControlName="mealPreference"
           value="meat"
-          required
+          [disabled]="isFormDisabled()"
           class="mr-2">
         <label for="meat">Fleisch</label>
       </div>
@@ -65,9 +84,9 @@
         <input
           type="radio"
           id="vegan"
-          name="meal-preference"
+          formControlName="mealPreference"
           value="vegan"
-          required
+          [disabled]="isFormDisabled()"
           class="mr-2">
         <label for="vegan">Vegan</label>
       </div>
@@ -75,20 +94,22 @@
   </div>
 
   <!-- Allergens/Intolerances field -->
-<div class="mb-4">
-  <label for="allergens" class="block text-gray-700 mb-2">Allergien oder Unverträglichkeiten (optional)</label>
-  <textarea
-    id="allergens"
-    name="allergens"
-    rows="3"
-    class="w-full px-3 py-2 border rounded focus:outline-none focus:border-blue-500"
-    placeholder="Hier kannst Du Allergien oder Unverträglichkeiten angeben..."
-  ></textarea>
-</div>
+  <div class="mb-4">
+    <label for="allergens" class="block text-gray-700 mb-2">Allergien oder Unverträglichkeiten (optional)</label>
+    <textarea
+      id="allergens"
+      formControlName="allergens"
+      rows="3"
+      [disabled]="isFormDisabled()"
+      class="w-full px-3 py-2 border rounded focus:outline-none focus:border-blue-500"
+      placeholder="Hier kannst Du Allergien oder Unverträglichkeiten angeben..."
+    ></textarea>
+  </div>
 
   <!-- Submit button -->
   <button
     type="submit"
+    [disabled]="!rsvpForm.valid"
     class="w-full bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500">
     Anmelden
   </button>
