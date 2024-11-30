@@ -20,6 +20,7 @@ export class RsvpFormComponent {
 
   initForm() {
     this.rsvpForm = this.fb.group({
+      name: ['', Validators.required],
       rsvpStatus: ['', Validators.required],
       additionalGuests: ['0'],
       mealPreference: ['', Validators.required],
@@ -46,13 +47,21 @@ export class RsvpFormComponent {
     return this.rsvpForm.get('rsvpStatus')?.value === 'not-accept';
   }
 
-  // Update the method signature to accept the event
   onSubmit(event: Event) {
-    //event.preventDefault(); // Prevent default form submission
-    
+    event.preventDefault(); // Prevent default form submission
+  
     if (this.rsvpForm.valid) {
-      console.log('Form submitted', this.rsvpForm.value);
-      // Add your submission logic here
+      const formData = new FormData();
+      Object.keys(this.rsvpForm.value).forEach(key => {
+        formData.append(key, this.rsvpForm.value[key]);
+      });
+  
+      fetch("/", {
+        method: "POST",
+        body: formData,
+      })
+      .then(() => console.log("Form successfully submitted"))
+      .catch((error) => alert(error));
     }
   }
 }
