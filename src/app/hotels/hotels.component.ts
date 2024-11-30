@@ -15,7 +15,7 @@ export class HotelsComponent {
       address: 'Kleibroker Str. 139, 26180 Rastede',
       description: 'ca. 700m entfernt von der Location',
       price: '125-135€ pro Nacht (inkl. Frühstück)',
-      booking: 'Bei der Buchung das Stichwort ... angeben (Für die Hochzeit ist ein Buchungskontigent hinterlegt.',
+      booking: 'Bei der Buchung das Stichwort "Hochzeit Sinje & Kevin (23.08.2025)" angeben. (Für die Hochzeit ist ein Buchungskontigent hinterlegt)',
       phone: '+49 (0) 4402-93810',
       website: 'https://www.zumzollhaus.de/',
       picture: 'assets/images/zumzollhauszimmer.jpg'

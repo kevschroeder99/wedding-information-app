@@ -9,7 +9,8 @@
 html, body {
     height: 100%;
     margin: 0;
-    font-family: ui-rounded, Hiragino Maru Gothic ProN;
+    /*font-family: ui-rounded, Hiragino Maru Gothic ProN;*/
+    font-family: Helvetica, sans-serif;
   }
   
   #app-root {
