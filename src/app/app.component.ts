@@ -10,6 +10,7 @@ import { HotelsComponent } from './hotels/hotels.component';
 import { RsvpFormComponent } from './rsvp-form/rsvp-form.component';
 import { CommonModule } from '@angular/common';
 import { FaqComponent } from './faq/faq.component';
+import { IcsService } from './services/ics.service';
 
 
 @Component({
@@ -29,7 +30,10 @@ import { FaqComponent } from './faq/faq.component';
     FaqComponent
   ],
   templateUrl: './app.component.html',
-  styleUrl: './app.component.css'
+  styleUrl: './app.component.css',
+  providers: [
+    IcsService
+  ]
 })
 export class AppComponent {
   title = 'Wedding Website';
