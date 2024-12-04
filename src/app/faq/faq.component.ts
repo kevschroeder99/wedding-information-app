@@ -89,7 +89,7 @@ export class FaqComponent {
       questions: [
         {
           question: 'Wann ist der letzte Tag, um zu- oder abzusagen?',
-          answer: 'Wir bitten um Rückmeldung bis Ende des Jahres.'
+          answer: 'Wir bitten um Rückmeldung bis März 2025.'
         },
         {
           question: 'Was ist, wenn ich kurzfristig absagen muss?',
