@@ -1,13 +1,13 @@
 <!-- rsvp-form.component.html -->
 <form 
-  name="rsvp1"
+  name="rsvp2"
   method="POST"
   data-netlify="true"
   netlify-honeypot="bot-field"
   class="max-w-md mx-auto p-6 bg-white rounded shadow-md">
   
   <!-- Hidden input for Netlify -->
-  <input type="hidden" name="form-name" value="rsvp1">
+  <input type="hidden" name="form-name" value="rsvp2">
   <!-- Honeypot field to prevent spam -->
   <p class="hidden">
     <label>Don't fill this out if you're human: <input name="bot-field"></label>
@@ -31,8 +31,8 @@
     id="comming"
     name="comming"
     class="w-full px-3 py-2 border rounded focus:outline-none focus:border-blue-500">
-    <option value="0">Ja, ich komme</option>
-    <option value="1">Nein, ich komme nicht</option>
+    <option value="Ja">Ja, ich komme</option>
+    <option value="Nein">Nein, ich komme nicht</option>
   </select>
 </div>
 
