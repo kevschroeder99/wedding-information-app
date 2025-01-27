@@ -1,5 +1,5 @@
 
-import { Component } from '@angular/core';
+import { Component, OnInit, ViewContainerRef, ComponentFactoryResolver  } from '@angular/core';
 import { RouterModule, RouterOutlet } from '@angular/router';
 import { GalleryComponent } from './gallery/gallery.component';
 import { HomeComponent } from './home/home.component';
@@ -11,6 +11,7 @@ import { RsvpFormComponent } from './rsvp-form/rsvp-form.component';
 import { CommonModule } from '@angular/common';
 import { FaqComponent } from './faq/faq.component';
 import { IcsService } from './services/ics.service';
+import { PopupComponent } from './popup/popup.component';
 
 
 @Component({
@@ -27,7 +28,8 @@ import { IcsService } from './services/ics.service';
     HomeComponent, 
     RsvpFormComponent, 
     HotelsComponent,
-    FaqComponent
+    FaqComponent,
+    PopupComponent
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css',
@@ -35,8 +37,17 @@ import { IcsService } from './services/ics.service';
     IcsService
   ]
 })
-export class AppComponent {
+export class AppComponent implements OnInit {
   title = 'Wedding Website';
   isMenuOpen = false;
 
+  constructor(
+    private viewContainerRef: ViewContainerRef,
+    private componentFactoryResolver: ComponentFactoryResolver
+  ) {}
+
+  ngOnInit() {
+    const componentFactory = this.componentFactoryResolver.resolveComponentFactory(PopupComponent);
+    this.viewContainerRef.createComponent(componentFactory);
+  }
 }
