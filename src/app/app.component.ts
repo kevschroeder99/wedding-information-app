@@ -37,17 +37,12 @@ import { PopupComponent } from './popup/popup.component';
     IcsService
   ]
 })
-export class AppComponent implements OnInit {
+export class AppComponent  {
   title = 'Wedding Website';
   isMenuOpen = false;
 
-  constructor(
-    private viewContainerRef: ViewContainerRef,
-    private componentFactoryResolver: ComponentFactoryResolver
-  ) {}
-
-  ngOnInit() {
-    const componentFactory = this.componentFactoryResolver.resolveComponentFactory(PopupComponent);
-    this.viewContainerRef.createComponent(componentFactory);
-  }
+//  ngOnInit() {
+  //  const componentFactory = this.componentFactoryResolver.resolveComponentFactory(PopupComponent);
+  //  this.viewContainerRef.createComponent(componentFactory);
+  //}
 }
