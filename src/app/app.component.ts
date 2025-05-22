@@ -41,8 +41,14 @@ export class AppComponent  {
   title = 'Wedding Website';
   isMenuOpen = false;
 
-//  ngOnInit() {
-  //  const componentFactory = this.componentFactoryResolver.resolveComponentFactory(PopupComponent);
-  //  this.viewContainerRef.createComponent(componentFactory);
-  //}
+
+  constructor(
+    private viewContainerRef: ViewContainerRef,
+    private componentFactoryResolver: ComponentFactoryResolver
+  ) {}
+  
+  ngOnInit() {
+    const componentFactory = this.componentFactoryResolver.resolveComponentFactory(PopupComponent);
+    this.viewContainerRef.createComponent(componentFactory);
+  }
 }
