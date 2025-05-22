@@ -29,11 +29,11 @@ export class FaqComponent {
         },
         {
           question: 'Gibt es ein bestimmtes Motto oder einen Dresscode?',
-          answer: 'Es gibt keinen speziellen Dresscode.'
+          answer: 'Es gibt keinen speziellen Dresscode. Zur Orientierung kann man sich an dem Motto Dressy Casual/Business Casual orientieren.'
         },
         {
           question: 'Wie läuft der Hochzeitstag ab?',
-          answer: 'Der genaue Zeitplan wird rechtzeitig vor der Hochzeit bekannt gegeben und ist unter "Zeitplan" zu finden. Der aktuelle Zeitplan ist noch ein Platzhalter!'
+          answer: 'Der genaue Zeitplan ist online und unter "Zeitplan" zu finden!'
         }
       ]
     },
@@ -46,11 +46,11 @@ export class FaqComponent {
         },
         {
           question: 'Gibt es Empfehlungen für Unterkünfte in der Nähe?',
-          answer: 'Das Hotel Zum Zollhaus hat ein Kontingent für unsere Hochzeit reserviert. Das Kontingent reicht jedoch nicht für alle Gäste aus, daher gilt: Wer zuerst kommt, mahlt zuerst. Außerdem haben wir unter "Hotels" eine Liste mit verschiedenen Unterkünften gefunden.'
+          answer: 'Das Hotel Zum Zollhaus hat ein Kontingent für unsere Hochzeit reserviert. Das Kontingent reicht jedoch nicht für alle Gäste aus, daher gilt: Wer zuerst kommt, mahlt zuerst. Außerdem haben wir unter "Hotels" eine Liste mit verschiedenen Unterkünften in der Nähe bereitgestellt. Für die, die ein paar Tage länger in der Region bleiben, können wir an der Küste Dangast und Wilhelmshaven empfehlen (Es gibt auch viele Tagestouren zu den ostfriesischen Inseln), aber auch Bad Zwischenahn, Oldenburg oder Bremen. Kommt gerne auf uns zu, wenn ihr ein paar Empfehlungen haben wollt :).'
         },
         {
           question: 'Wie erreiche ich die Location mit öffentlichen Verkehrsmitteln?',
-          answer: 'Die Anbindung an öffentliche Verkehrsmittel wird noch bekannt gegeben.'
+          answer: 'Die Anbindung an öffentliche Verkehrsmittel ist unter "Location" beschrieben.'
         }
       ]
     },
@@ -59,7 +59,7 @@ export class FaqComponent {
       questions: [
         {
           question: 'Wird es ein Menü oder Buffet geben?',
-          answer: 'Das Essen wird noch bekannt gegeben.'
+          answer: 'Es gibt ein sommerliches Grill-Buffet mit verschiedenen Beilagen und Salaten und einer Auswahl an vegetarischen Alternativen.'
         },
         {
           question: 'Gibt es vegetarische/vegane/andere spezielle Optionen?',
@@ -97,7 +97,7 @@ export class FaqComponent {
         },
         {
           question: 'Gibt es einen Hochzeitswunsch oder eine Geschenkliste?',
-          answer: 'Details zu Geschenkwünschen werden noch bekannt gegeben.'
+          answer: 'Wir haben keine Geschenkewünsche. Wenn Ihr uns etwas schenken möchtet, freuen wir uns über einen Beitrag zu unserer Hochzeitsreise :).'
         },
         {
           question: 'Wird es einen Fotografen geben, und können wir Bilder machen?',

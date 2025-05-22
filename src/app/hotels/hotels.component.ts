@@ -22,11 +22,10 @@ export class HotelsComponent {
     },
     {
       name: '🏕️ Campingplatz - Campsite MPS Rastede',
-      address: 'Hasenbült, 26180 Rastede',
-      description: 'ca. 500m entfernt von der Location (Abbildung entspricht nicht der Realität)',
-      price: 'Preis unbekannt',
+      address: '+++ !!! Campingplatz wurde geschlossen !!! +++',
+      description: '',
+      price: '',
       picture: 'assets/images/camping.jpg',
-      website: 'https://g.co/kgs/e3Y2Yyi'
     }, 
     {
       name: '🏨 Schlosspark-Hotel Hof von Oldenburg',
